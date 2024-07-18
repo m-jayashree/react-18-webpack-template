@@ -1,7 +1,2 @@
-$theme-colors: (
-  'primary':blue,
-  'info': tomato,
-  'danger': teal
-);
-
+@import './foundation';
 @import '~bootstrap/scss/bootstrap';

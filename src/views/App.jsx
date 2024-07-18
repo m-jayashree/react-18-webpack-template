@@ -5,25 +5,26 @@ import RouteEnum from '../constants/RouteEnum';
 import MainNav from './components/main-nav/MainNav';
 import LoadingIndicator from './components/loading-indicator/LoadingIndicator';
 import Toasts from './components/toasts/Toasts';
+import environment from 'environment';
 
+const LoginPage = lazy(() => import('./login-page/LoginPage'));
 const HomePage = lazy(() => import('./home-page/HomePage'));
 const NotFoundPage = lazy(() => import('./not-found-page/NotFoundPage'));
-const EpisodesPage = lazy(() => import('./episodes-page/EpisodesPage'));
-const AboutPage = lazy(() => import('./about-page/AboutPage'));
 
 export default function App(props) {
   return (
-    <ConnectedRouter history={props.history}>
-      <Suspense fallback={<LoadingIndicator isActive={true} />}>
-        <MainNav />
-        <Switch>
-          <Route exact={true} path={RouteEnum.Home} component={HomePage} />
-          <Route path={RouteEnum.Episodes} component={EpisodesPage} />
-          <Route path={RouteEnum.About} component={AboutPage} />
-          <Route component={NotFoundPage} />
-        </Switch>
-        <Toasts />
-      </Suspense>
-    </ConnectedRouter>
+    <div id={environment.common_settings.brandCode === 'PO' ? 'brand-PO' : 'brand-Cunard'}>
+      <ConnectedRouter history={props.history}>
+        <Suspense fallback={<LoadingIndicator isActive={true} />}>
+          <MainNav />
+          <Switch>
+            <Route path={RouteEnum.Login} component={LoginPage} exact={true} />
+            <Route exact={true} path={RouteEnum.Home} component={HomePage} />
+            <Route component={NotFoundPage} />
+          </Switch>
+          <Toasts />
+        </Suspense>
+      </ConnectedRouter>
+    </div>
   );
 }

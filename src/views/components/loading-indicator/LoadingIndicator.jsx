@@ -11,7 +11,7 @@ export default function LoadingIndicator(props) {
       {isActive && (
         <div className={styles?.loaderContainer}>
           <div className="spinner-border" role="status">
-            <span className="sr-only">Loading...</span>
+            <span className="sr-only"></span>
           </div>
         </div>
       )}
