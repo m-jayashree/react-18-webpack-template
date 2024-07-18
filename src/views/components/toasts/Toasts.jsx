@@ -12,7 +12,7 @@ export default function Toasts(props) {
   }
 
   return (
-    <div className={styles.wrapper}>
+    <div className={styles?.wrapper}>
       {toasts.map((model) => (
         <ToastCard key={model.id} item={model} />
       ))}

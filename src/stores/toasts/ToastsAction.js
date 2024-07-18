@@ -1,5 +1,5 @@
 import * as ActionUtility from '../../utilities/ActionUtility';
-import uuid from 'uuid/dist/v4';
+import { v4 as uuidv4 } from 'uuid';
 
 export const ADD_TOAST = 'ToastsAction.ADD_TOAST';
 
@@ -7,7 +7,7 @@ export function add(message, type) {
   return ActionUtility.createAction(ADD_TOAST, {
     message,
     type,
-    id: uuid(),
+    id: uuidv4(),
   });
 }
 

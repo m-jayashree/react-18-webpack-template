@@ -13,12 +13,10 @@ export default function HomePage(props) {
   const isRequesting = useSelector((state) => selectRequesting(state, [ShowsAction.REQUEST_SHOW, ShowsAction.REQUEST_CAST]));
 
   return (
-    <div className={styles.wrapper}>
-      <LoadingIndicator isActive={isRequesting}>
-        <MainOverview />
-       
-        <Actors />
-      </LoadingIndicator>
-    </div>
+    <LoadingIndicator isActive={isRequesting}>
+      <MainOverview />
+
+      <Actors />
+    </LoadingIndicator>
   );
 }

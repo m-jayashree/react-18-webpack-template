@@ -21,30 +21,30 @@ export default function AboutPage(props) {
   const requestErrorText = useSelector((state) => selectErrorText(state, [ShowsAction.REQUEST_ERROR_FINISHED]));
 
   return (
-    <div className={styles.wrapper}>
-      <h2 >About</h2>
-      <LoadingIndicator isActive={isRequesting}>
-        <Container>
-          <p>
-            This page is only to show how to handle API errors on the page. You will also notice a popup indicator with the actual error text. Below
-            we create a custom error message.
-          </p>
-        </Container>
-        {requestErrorText && 
-         <Modal.Dialog>
-         <Modal.Header closeButton>
-           <Modal.Title>Error</Modal.Title>
-         </Modal.Header>
- 
-         <Modal.Body>
-           <p>Sorry there was an error requesting this content."</p>
-         </Modal.Body>
- 
-         <Modal.Footer>
-           <Button variant="secondary">Close</Button>
-         </Modal.Footer>
-       </Modal.Dialog>}
-      </LoadingIndicator>
-    </div>
+    <LoadingIndicator isActive={isRequesting}>
+      <h2>About</h2>
+
+      <Container>
+        <p>
+          This page is only to show how to handle API errors on the page. You will also notice a popup indicator with the actual error text. Below we
+          create a custom error message.
+        </p>
+      </Container>
+      {requestErrorText && (
+        <Modal.Dialog>
+          <Modal.Header closeButton>
+            <Modal.Title>Error</Modal.Title>
+          </Modal.Header>
+
+          <Modal.Body>
+            <p>Sorry there was an error requesting this content."</p>
+          </Modal.Body>
+
+          <Modal.Footer>
+            <Button variant="secondary">Close</Button>
+          </Modal.Footer>
+        </Modal.Dialog>
+      )}
+    </LoadingIndicator>
   );
 }

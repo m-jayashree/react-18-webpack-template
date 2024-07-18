@@ -1,4 +1,4 @@
-import ToastStatusEnum from './ToastStatusEnum';
+import ToastStatusEnum from './ToastStatusEnum.ts';
 
 const buttonColorMap = {
   [ToastStatusEnum.Error]: 'red',

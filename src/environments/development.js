@@ -1,5 +1,7 @@
 import environment from './base';
-
+console.log('env', environment);
+const appSettings = window.appSettings;
+console.log('window', window, appSettings);
 const baseApi = 'https://api.tvmaze.com';
 const env = environment(baseApi);
 

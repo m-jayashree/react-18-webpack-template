@@ -5,15 +5,11 @@ import classNames from 'classnames';
 export default function LoadingIndicator(props) {
   const { isActive = false } = props; // defaultProps example
   const { className, children } = props;
-
-  const cssClasses = classNames(className, {
-    [styles.wrapper]: isActive,
-  });
-
+  const cssClasses = `${className} ${isActive ? styles?.wrapper : ''}`.trim();
   return (
     <div className={cssClasses}>
       {isActive && (
-        <div className={styles.loaderContainer}>
+        <div className={styles?.loaderContainer}>
           <div className="spinner-border" role="status">
             <span className="sr-only">Loading...</span>
           </div>
