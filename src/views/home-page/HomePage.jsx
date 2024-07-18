@@ -16,7 +16,7 @@ export default function HomePage(props) {
   return (
     <div className={styles.wrapper}>
       <LoadingIndicator isActive={isRequesting}>
-        QR code reader component
+        QR code reader component test
         <Container>
           <Row>
             <Col md={4}>
