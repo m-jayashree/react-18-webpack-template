@@ -1,7 +1,8 @@
 enum RouteEnum {
-  Home = '/',
+  Home = '/Home',
   Episodes = '/episodes',
-  About = '/about',
+  ProfileInfo = '/profileinfo',
+  Login = '/',
 }
 
 export default RouteEnum;

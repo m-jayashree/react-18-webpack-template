@@ -1,0 +1,51 @@
+@font-face {
+  font-family: Icomoon;
+  src: url(./../assets/fonts/icomoon.woff) format('woff'), url(./../assets/fonts/icomoon.woff2) format('woff2'),
+    url(./../assets/fonts/icomoon.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: Icomoon;
+  src: url(./../assets/fonts/icomoon.woff) format('woff'), url(./../assets/fonts/icomoon.woff2) format('woff2'),
+    url(./../assets/fonts/icomoon.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: GreycliffCF-light;
+  src: url(./../assets/fonts/GreycliffCF-Light.otf), url(./../assets/fonts/GreycliffCF-Light.woff);
+}
+
+@font-face {
+  font-family: GreycliffCF-medium;
+  src: url(./../assets/fonts/GreycliffCF-Medium.otf), url(./../assets/fonts/GreycliffCF-Medium.woff);
+}
+
+@font-face {
+  font-family: GreycliffCF-bold;
+  src: url(./../assets/fonts/GreycliffCF-Bold.otf), url(./../assets/fonts/GreycliffCF-Bold.woff);
+}
+
+@font-face {
+  font-family: Praxis-regular;
+  src: url('./../assets/fonts/Praxis LT Regular.eot'), url('./../assets/fonts/Praxis LT Regular.woff'),
+    url('./../assets/fonts/Praxis\ LT\ Regular.otf');
+}
+
+@font-face {
+  font-family: Praxis-semibold;
+  src: url('./../assets/fonts/Praxis LT Semibold.otf'), url('./../assets/fonts/Praxis LT Semibold.woff');
+}
+
+@font-face {
+  font-family: greycliffcf-regular;
+  src: url('./../assets/fonts/greycliffcf-regular-webfont.woff2') format('woff2'), url('./../assets/fonts/GreycliffCF-Regular.otf'),
+    url('./../assets/fonts/greycliffcf-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$theme-colors: (
+  'primary': red,
+  'info': tomato,
+  'danger': teal,
+);

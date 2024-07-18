@@ -1,0 +1,50 @@
+@font-face {
+  font-family: Sang-bleu-sans-light;
+  src: url(./../assets/fonts/SangBleuSans-Light-WebXL.woff) format('woff'), url(./../assets/fonts/SangBleuSans-Light-WebXL.woff2) format('woff2'),
+    url(./../assets/fonts/SangBleuSans-Light-WebXL.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: Sang-bleu-sans-regular;
+  src: url(./../assets/fonts/SangBleuSans-Regular-WebXL.woff) format('woff'), url(./../assets/fonts/SangBleuSans-Regular-WebXL.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: Icomoon;
+  src: url(./../assets/fonts/icomoon.woff) format('woff'), url(./../assets/fonts/icomoon.woff2) format('woff2'),
+    url(./../assets/fonts/icomoon.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: Icomoon;
+  src: url(./../assets/fonts/icomoon.woff) format('woff'), url(./../assets/fonts/icomoon.woff2) format('woff2'),
+    url(./../assets/fonts/icomoon.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: Akkurat-regular;
+  src: url(./../assets/fonts/AkkuratStd-Reg.woff) format('woff'), url(./../assets/fonts/AkkuratStd-Reg.woff2) format('woff2'),
+    url(./../assets/fonts/AkkuratStd-Reg.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: Akkurat-bold;
+  src: url(./../assets/fonts/AkkuratStd-Bold.woff) format('woff'), url(./../assets/fonts/AkkuratStd-Bold.woff2) format('woff2'),
+    url(./../assets/fonts/AkkuratStd-Bold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: Praxis-regular;
+  src: url('./../assets/fonts/Praxis LT Regular.eot'), url('./../assets/fonts/Praxis LT Regular.woff');
+}
+
+@font-face {
+  font-family: Praxis-semibold;
+  src: url('./../assets/fonts/Praxis LT Semibold.otf'), url('./../assets/fonts/Praxis LT Semibold.woff');
+}
+
+$theme-colors: (
+  'primary': green,
+  'info': tomato,
+  'danger': teal,
+);
