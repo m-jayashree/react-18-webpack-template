@@ -1,2 +1,7 @@
 @import './foundation';
 @import '~bootstrap/scss/bootstrap';
+
+.__cuk-master-class {
+  font-family: $body-font;
+  color: $body-color;
+}

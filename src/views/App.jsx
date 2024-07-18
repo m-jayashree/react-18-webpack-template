@@ -13,7 +13,7 @@ const NotFoundPage = lazy(() => import('./not-found-page/NotFoundPage'));
 
 export default function App(props) {
   return (
-    <div id={environment.common_settings.brandCode === 'PO' ? 'brand-PO' : 'brand-Cunard'}>
+    <div id={environment.common_settings.brandCode === 'PO' ? 'brand-PO' : 'brand-Cunard'} className="__cuk-master-class">
       <ConnectedRouter history={props.history}>
         <Suspense fallback={<LoadingIndicator isActive={true} />}>
           <MainNav />
