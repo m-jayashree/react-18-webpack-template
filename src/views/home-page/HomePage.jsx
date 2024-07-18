@@ -1,13 +1,14 @@
 import styles from './HomePage.module.scss';
 
-import React from 'react';
+import React, { useState } from 'react';
+
 import { useSelector } from 'react-redux';
 import * as ShowsAction from '../../stores/shows/ShowsAction';
-import Actors from './components/actors/Actors';
-import MainOverview from './components/main-overview/MainOverview';
-
 import LoadingIndicator from '../components/loading-indicator/LoadingIndicator';
 import { selectRequesting } from '../../selectors/requesting/RequestingSelector';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 export default function HomePage(props) {
   const isRequesting = useSelector((state) => selectRequesting(state, [ShowsAction.REQUEST_SHOW, ShowsAction.REQUEST_CAST]));
@@ -15,9 +16,15 @@ export default function HomePage(props) {
   return (
     <div className={styles.wrapper}>
       <LoadingIndicator isActive={isRequesting}>
-        <MainOverview />
-       
-        <Actors />
+        QR code reader component
+        <Container>
+          <Row>
+            <Col md={4}>
+              {' '}
+              <div></div>
+            </Col>
+          </Row>
+        </Container>
       </LoadingIndicator>
     </div>
   );
